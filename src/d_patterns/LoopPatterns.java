@@ -1,0 +1,88 @@
+package d_patterns;
+
+import java.util.Scanner;
+
+public class LoopPatterns {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int n = sc.nextInt();
+
+        // Right Pyramid
+         for(int i = 1; i<= n ; i++){
+            for( int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        //Reverse Right Pyramid
+          for(int i =n; i>=1 ; i--){
+            for(int j=1 ; j<=i ;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        // Right-Aligned Triangle
+       for (int i = 1; i <= n; i++) {
+            //print spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            //print pattern
+            for (int k = 1; k <= i; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        //Central Aligned pyramid
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //Reverse central pyramid
+       for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+
+
+        //Diamond pattern
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
