@@ -20,7 +20,7 @@ public class ArraySumAverage {
         for (int i = 0; i < size; i++) {
             sum = sum + array[i];
         }
-        double Average = sum/size;
+        double Average = (double)sum/array.length;
             System.out.println("sum of the array is : " +sum);
             System.out.println("Average of the array is : "+Average);
         }
