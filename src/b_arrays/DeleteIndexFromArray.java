@@ -2,7 +2,7 @@ package b_arrays;
 
 import java.util.Scanner;
 
-public class DeleteFromArray {
+public class DeleteIndexFromArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array :");
