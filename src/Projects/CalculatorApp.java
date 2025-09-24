@@ -1,4 +1,4 @@
-package a_basics;
+package Projects;
 
 import java.util.Scanner;
 
